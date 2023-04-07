@@ -73,7 +73,7 @@ const config = {
         links: [
           {
             label: "Découvrir Beebop",
-            to: "/docs/intro",
+            to: "/docs/introduction/intro",
           },
 
           {
@@ -82,7 +82,7 @@ const config = {
           },
           {
             label: "Beebop",
-            href: "#",
+            href: "https://github.com/mchauveni/beebop_app",
           },
         ],
         copyright: `Copyright © ${new Date().getFullYear()} Beebop`,
