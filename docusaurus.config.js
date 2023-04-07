@@ -72,17 +72,12 @@ const config = {
         style: "dark",
         links: [
           {
-            label: "Découvrir Beebop",
-            to: "/docs/introduction/",
-          },
-
-          {
             label: "GitHub",
             href: "https://github.com/mchauveni/beebop_app",
           },
           {
             label: "Beebop",
-            href: "https://github.com/mchauveni/beebop_app",
+            href: "https://beebop.sophiegarreta.fr",
           },
         ],
         copyright: `Copyright © ${new Date().getFullYear()} Beebop`,
