@@ -1,3 +1,7 @@
+---
+slug: /
+---
+
 # Introduction
 
 Bienvenue dans l'application **Beebop**, conçue pour les apiculteurs qui cherchent à gérer efficacement leurs ruches et leur production de miel. Grâce à notre application, vous pourrez facilement suivre l'état de vos colonies, surveiller les performances de vos ruches, suivre les récoltes de miel et bien plus encore.
