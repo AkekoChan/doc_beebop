@@ -73,7 +73,7 @@ const config = {
         links: [
           {
             label: "Découvrir Beebop",
-            to: "/docs/introduction/intro",
+            to: "/docs/introduction/",
           },
 
           {
