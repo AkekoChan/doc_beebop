@@ -8,4 +8,4 @@ Dans cette documentation, vous trouverez toutes les informations nécessaires po
 
 **Prêt à commencer ? Allons-y !**
 
-[Allez vers Beebop](https://ratio.fr)
+[Allez vers Beebop](https://beebop.sophiegarreta.fr/)
