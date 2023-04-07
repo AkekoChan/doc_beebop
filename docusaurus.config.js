@@ -12,7 +12,7 @@ const config = {
   favicon: "img/icon.svg",
 
   // Set the production url of your site here
-  url: "https://docusaurus-2.netlify.app", // Url to your site with no trailing slash
+  url: "https://beebop-doc.netlify.app", // Url to your site with no trailing slash
   baseUrl: "/",
   staticDirectories: ["public", "static"],
 
