@@ -6,6 +6,4 @@ Notre application est conçue pour être **simple** et **intuitive** à utiliser
 
 Dans cette documentation, vous trouverez toutes les informations nécessaires pour vous aider à utiliser l'application au mieux de ses capacités. Nous espérons que vous trouverez notre application utile et que cette documentation répondra à toutes vos questions.
 
-**Prêt à commencer ? Allons-y !**
-
 [Allez vers Beebop](https://beebop.sophiegarreta.fr/)

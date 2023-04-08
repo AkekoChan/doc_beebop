@@ -17,18 +17,10 @@ Les wireframes sont des **maquettes** simples et schématiques qui permettent de
 
 La réflexion post-production, quant à elle, correspond aux ajustements et améliorations apportés à l'application une fois qu'elle est en ligne et utilisée par les apiculteurs. Elle permet de prendre en compte les difficultés rencontrées lors de la production et de **corriger** les éventuels problèmes techniques ou ergonomiques rencontrés. Cette réflexion est continue et permet de faire **évoluer** l'application dans le temps pour **répondre aux besoins** des utilisateurs.
 
-Gestion côté administrateur, page d'acceuil de l'admin.
+Vous pouvez retrouver les **[wireframes sur figma](https://www.figma.com/file/W1Xs6jDjjDOgbeHo9Ni9IV/WireFrame?node-id=0%3A1&t=yZhHRimENPRbzoqN-1)**.
 
+Voici les wireframes côté administrateur :
 ![Admin list page](/img/ADMIN_beekeepers_list.png)
-
-L'admin a accès à toutes les infos sur les utilisateurs.
-
 ![Admin show page](/img/ADMIN_beekeeper.png)
-
-L'admin a la possibilité de valider ou rejeter la demande de création de compte des nouveaux internautes.
-
 ![Admin validate page](/img/ADMIN_validation.png)
-
-Pour les utilisateurs, affichage des ruches d'un rucher spécifique à l'utilisateur connecté.
-
 ![Beehive page](/img/BEEHIVES_list.png)

@@ -15,6 +15,16 @@ En utilisant ce modèle, le code est organisé de manière plus claire et facili
 
 Les entités dans Symfony sont des **classes PHP** qui correspondent aux tables dans une base de données. Ce concept permet de manipuler les données plus facilement et de manière plus intuitive. Les entités sont l'un des concepts clés de Symfony et facilitent la création et la maintenance d'applications web.
 
+Symfony fournit des outils tels que **MakerBundle** pour générer automatiquement des fichiers de contrôleurs et des fichiers de vue correspondants pour chaque entité.
+
+```
+composer require --dev symfony/maker-bundle
+
+symfony console make:entity NomEntité
+
+symfony console make:controller NomController
+```
+
 **Beekeeper** : Apiculteurs soit les utilisateurs. Chacun possède son compte avec des informations personnelles. La classe Beekeeper est une des entités clés de l'application Beebop.
 
 ```twig title="/src/pages/Beekeeper.php"
@@ -66,6 +76,44 @@ class Beekeeper implements UserInterface, PasswordAuthenticatedUserInterface
 
 ## Fixtures
 
+Les fixtures peuvent être utilisées en lançant :
+
+```
+composer require --dev orm-fixtures
+```
+
 Les **fixtures** dans Symfony sont des **classes** qui permettent de créer des **fausses données** pour une application web. Elles sont utilisées pour **initialiser une base de données** avec des données prédéfinies et ainsi **faciliter les tests** unitaires et fonctionnels. Les fixtures peuvent être créées manuellement ou à l'aide d'un **générateur automatique** de données. Les fixtures sont une fonctionnalité pratique pour les développeurs car elles permettent de **simuler** des scénarios réels et d'assurer que l'application fonctionne correctement avant sa mise en production.
+
+Exemple de la fixture pour l'entité produit :
+
+```php title="/pages/AppFixtures.php"
+
+class AppFixtures extends Fixture
+{
+    const MAX_PRODUCTS = 10;
+    const PRODUCTS = ["miel", "cire", "pollen"];
+
+    public function load(ObjectManager $manager)
+    {
+        $this->loadAdmin($manager);
+        $this->loadBeekeeper($manager);
+    }
+    public function loadProduct(ObjectManager $manager)
+        {
+            for ($m = 0; $m < self::MAX_PRODUCTS; $m++) {
+            $faker = Factory::create();
+            $product = new Product();
+            $product
+                ->setType($faker->randomElement(self::PRODUCTS))
+                ->setDate(DateTimeImmutable::createFromMutable($faker->dateTimeInInterval('-20 days', '+10 days')))
+                ->setQuantity($faker->randomDigitNotNull())
+                ->setBeehive($this->getReference('Beehive-' . random_int(0, self::MAX_BEEHIVES - 1)));
+
+            $manager->persist($product);
+        }
+    $manager->flush();
+    }
+
+```
 
 Beebop utilise un système d'**imbrication** pour gérer les **relations** entre ses entités. Cela signifie que certaines entités peuvent être liées à d'autres entités pour former une **hiérarchie**. Par exemple, une ruche est liée à un rucher, qui est lui-même lié à un apiculteur. Les fixtures de Beebop reflètent cette hiérarchie en créant des données liées entre elles pour simuler un environnement réel. Cela permet de **tester** l'application dans des conditions proches de la réalité, ce qui est important pour s'assurer de son bon fonctionnement.
