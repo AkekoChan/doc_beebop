@@ -54,4 +54,4 @@ Suivi de la performance globale de l'**activité apicole** globale de l'utilisat
 
 En cliquant sur une des ruches, vous trouvez le même graphique à l'échelle de la ruche, ainsi que la liste des **productions affiliées** à cette ruche. Vous pouvez en enregistrer de nouvelles et modifier ou supprimer celles déja existantes.
 
-![Production](/img/production_beehive.png)
+![Production](/img/beehive_production.png)
